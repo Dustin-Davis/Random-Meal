@@ -1,5 +1,5 @@
 const getMealBtn = document.getElementById('get_meal');
-
+const mealContainer = document.getElementById('meal');
 
 getMealBtn.addEventListener('click', () => {
   fetch('https://www.themealdb.com/api/json/v1/1/random.php')
@@ -19,4 +19,13 @@ function createMeal(meal) {
     }
   }
   console.log(ingredients);
+
+  mealContainer.innerHTML = `
+  <div class="row">
+    <div class = "column five img-div">
+      <img src="${meal.strMealThumb}" alt="Meal Img" class="meal-img">
+    </div>
+  </div>
+
+  `;
 }
