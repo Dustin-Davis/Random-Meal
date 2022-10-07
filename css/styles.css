@@ -10,3 +10,26 @@ h1 {
   align-items: center;
   color: white;
 }
+
+button{
+    background-color: skyblue;
+    border: none;
+    border-radius: 2px;
+    width: 140px;
+    height: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subheading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
