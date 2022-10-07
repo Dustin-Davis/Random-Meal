@@ -1,0 +1,47 @@
+body{
+    background-image: url("/images/italian-food-background-1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+button{
+    background-color: skyblue;
+    border: none;
+    border-radius: 2px;
+    width: 140px;
+    height: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subheading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.meal-img {
+  height: 300px;
+  width: 450px;
+}
+
+.img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
