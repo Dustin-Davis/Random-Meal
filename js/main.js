@@ -47,6 +47,13 @@ function createMeal(meal) {
           <li>${ingredient}</li>`).join('')}
         </ol>
     </div>
+
+    <div class="font-color column-half">
+      <h3>Instructions: </h3>
+        <h3>${meal.strMeal}</h3>
+        <p class="p-width">${meal.strInstructions}</p>
+    </div>
+
   </div>
   `;
 }
