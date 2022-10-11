@@ -39,5 +39,14 @@ function createMeal(meal) {
     </div>
   </div>
 
+  <div class="row">
+    <div class="column-quarter">
+      <h3 class="font-color">Ingredients: </h3>
+        <ol class="font-color">
+          ${ingredients.map(ingredient => `
+          <li>${ingredient}</li>`).join('')}
+        </ol>
+    </div>
+  </div>
   `;
 }
