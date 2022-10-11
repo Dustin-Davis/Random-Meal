@@ -21,6 +21,14 @@ button{
     text-transform: uppercase;
 }
 
+.row {
+  display: flex;
+  justify-content: center;
+  padding: 0 25px 0 25px;
+  margin-left: 350px;
+  margin-right: auto;
+}
+
 .button-div {
     display: flex;
     justify-content: center;
@@ -32,6 +40,7 @@ button{
   justify-content: center;
   align-items: center;
   color: white;
+  font-size: 25px;
 }
 
 .meal-img {
@@ -44,4 +53,30 @@ button{
     justify-content: center;
     align-items: center;
     margin-top: 25px;
+}
+
+.font-color {
+  color: white;
+}
+
+.font-color-top {
+  color: white;
+}
+
+.column-half {
+  flex-basis: 50%;
+}
+
+.column-quarter {
+  flex-basis: 25%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-width {
+  width: 500px;
 }
