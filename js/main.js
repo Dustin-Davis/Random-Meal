@@ -21,7 +21,19 @@ function createMeal(meal) {
   console.log(ingredients);
 
   mealContainer.innerHTML = `
-  <div class="row">
+
+  <p class="font-color-top center">
+    <strong>Category: </strong>
+      ${meal.strCategory}
+    <strong> | </strong>
+    <strong>Origin: </strong>
+      ${meal.strArea}
+    <strong> | </strong>
+    <strong>Tags: </strong>
+      ${meal.strTags.split(',').join(' , ')}
+  </p>
+
+  <div>
     <div class = "column five img-div">
       <img src="${meal.strMealThumb}" alt="Meal Img" class="meal-img">
     </div>
