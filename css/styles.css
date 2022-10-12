@@ -1,5 +1,5 @@
 body{
-    background-image: url("/images/italian-food-background-1.jpg");
+    background-image: url("/images/WEBSITE02_b78d574f-17b8-46d5-a20e-ac0c315aa49c_1920x1080.webp");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -23,10 +23,10 @@ button{
 
 .row {
   display: flex;
-  justify-content: center;
   padding: 0 25px 0 25px;
-  margin-left: 350px;
-  margin-right: auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .button-div {
@@ -63,20 +63,21 @@ button{
   color: white;
 }
 
-.column-half {
-  flex-basis: 50%;
-}
-
-.column-quarter {
-  flex-basis: 25%;
-}
-
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.p-width {
-  width: 500px;
+
+@media only screen and (min-width : 416px) {
+  .col-sm-half {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width : 416px) {
+  .row {
+    flex-direction: row;
+  }
 }

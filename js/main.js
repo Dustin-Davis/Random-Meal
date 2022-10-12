@@ -18,39 +18,35 @@ function createMeal(meal) {
       break;
     }
   }
-  console.log(ingredients);
 
   mealContainer.innerHTML = `
 
   <p class="font-color-top center">
     <strong>Category: </strong>
-      ${meal.strCategory}
+    ${meal.strCategory}
     <strong> | </strong>
     <strong>Origin: </strong>
       ${meal.strArea}
-    <strong> | </strong>
-    <strong>Tags: </strong>
-      ${meal.strTags.split(',').join(' , ')}
   </p>
+        <h3 class="font-color-top center">${meal.strMeal}</h3>
 
   <div>
-    <div class = "column five img-div">
+    <div class = "img-div">
       <img src="${meal.strMealThumb}" alt="Meal Img" class="meal-img">
     </div>
   </div>
 
   <div class="row">
-    <div class="column-quarter">
-      <h3 class="font-color">Ingredients: </h3>
-        <ol class="font-color">
+    <div class="font-color test col-sm-half">
+      <h3>Ingredients: </h3>
+        <ul>
           ${ingredients.map(ingredient => `
           <li>${ingredient}</li>`).join('')}
-        </ol>
+        </ul>
     </div>
 
-    <div class="font-color column-half">
+    <div class="font-color col-sm-half">
       <h3>Instructions: </h3>
-        <h3>${meal.strMeal}</h3>
         <p class="p-width">${meal.strInstructions}</p>
     </div>
 
