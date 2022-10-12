@@ -69,17 +69,14 @@ button{
     align-items: center;
 }
 
-.test {
 
-}
-
-@media only screen and (min-width : 415px) {
+@media only screen and (min-width : 416px) {
   .col-sm-half {
     width: 50%;
   }
 }
 
-@media only screen and (max-width : 415px) {
+@media only screen and (max-width : 416px) {
   .row {
     flex-direction: row;
   }
